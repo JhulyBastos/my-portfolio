@@ -2,25 +2,22 @@ import { Skills } from "@/types/Skills";
 
 export const skills: Skills[] = [
   {
-    imagem: "/assets/imagens/",
+    imagem: "/assets/icons/html.svg",
   },
   {
-    imagem: "/assets/imagens/",
+    imagem: "/assets/icons/css.svg",
   },
   {
-    imagem: "/assets/imagens/",
+    imagem: "/assets/icons/js.svg",
   },
   {
-    imagem: "/assets/imagens/",
+    imagem: "/assets/icons/ts.png",
+  },
+  {
+    imagem: "/assets/icons/tw.svg",
   },
 
   {
-    imagem: "/assets/imagens/",
-  },
-  {
-    imagem: "/assets/imagens/",
-  },
-  {
-    imagem: "/assets/imagens/",
+    imagem: "/assets/icons/react.svg",
   },
 ];

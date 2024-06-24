@@ -26,7 +26,13 @@ export default function Home() {
           <p>Olá, eu sou</p>
           <h1 className="text-5xl text-brand-color">Jhuly Bastos</h1>
           <p className="mt-4">Desenvolvedora Front-end e Designer</p>
-          <div className="mt-4 w-[193px] h-[37px] flex items-center justify-center bg-brand-color text-dark-10 font-semibold text-sm rounded  hover:scale-105 duration-300">
+          <div className="flex gap-2">
+            <a
+              href="https://social-tree-gqhqp38yd-jhulybastos.vercel.app/"
+              target="_blank"
+            >
+              <Button>Contato</Button>
+            </a>
             <a href="/assets/my-document/curriculo.pdf" target="_blank">
               <Button>Baixar currículo</Button>
             </a>
@@ -53,12 +59,15 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <h1 className="text-2xl text-brand-color mt-16">Habilidades</h1>
           <div className="">
-            <div className="grid grid-cols-7 place-items-cente py-8 gap-4">
+            <div className="grid grid-cols-6 place-items-cente py-8 gap-4">
               {skills.map((skill) => (
                 <Card skills={skill} />
               ))}
             </div>
           </div>
+        </div>
+        <div>
+          <h1 className="text-2xl text-brand-color mt-4">Projetos</h1>
         </div>
       </div>
     </div>

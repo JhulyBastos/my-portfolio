@@ -6,15 +6,26 @@ export default function Home() {
   return (
     <div className="w-full h-screen flex flex-col bg-dark-10">
       {/* parte de cima */}
-      <header className="bg-dark-20 flex justify-between items-center px-80 py-6">
+      <header
+        id="inicio"
+        className="bg-dark-20 flex justify-between items-center px-80 py-6"
+      >
         <h1 className="text-brand-color text-2xl">{`<Jhuly Bastos/>`}</h1>
         <nav>
           <ol className="flex justify-center items-center gap-7">
-            <li>Inicio</li>
-            <li>Sobre mim</li>
-            <li>Projetos</li>
-            <li>Serviços</li>
-            <li>Habilidades</li>
+            <li>
+              <a href="#inicio">Inicio</a>
+            </li>
+            <li>
+              <a href="#sobre-mim">Sobre mim</a>
+            </li>
+
+            <li>
+              <a href="#habilidades">Habilidades</a>
+            </li>
+            <li>
+              <a href="#projetos">Projetos</a>
+            </li>
           </ol>
         </nav>
       </header>
@@ -49,7 +60,9 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col items-center mt-16">
-        <h1 className="text-2xl text-brand-color">Sobre mim</h1>
+        <h1 id="sobre-mim" className="text-2xl text-brand-color">
+          Sobre mim
+        </h1>
         <p className="w-1/2 text-[16px] text-center mt-5">
           Entusiasta da tecnologia, com foco no desenvolvimento front-end, busco
           aprimorar constantemente minhas habilidades para oferecer experiências
@@ -57,7 +70,9 @@ export default function Home() {
           graduanda em Análise e desenvolvimento de sistemas.
         </p>
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl text-brand-color mt-16">Habilidades</h1>
+          <h1 id="habilidades" className="text-2xl text-brand-color mt-16">
+            Habilidades
+          </h1>
           <div className="">
             <div className="grid grid-cols-6 place-items-cente py-8 gap-4">
               {skills.map((skill) => (
@@ -67,7 +82,9 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <h1 className="text-2xl text-brand-color mt-4">Projetos</h1>
+          <h1 id="projetos" className="text-2xl text-brand-color mt-4">
+            Projetos
+          </h1>
         </div>
       </div>
     </div>

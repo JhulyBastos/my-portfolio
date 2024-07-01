@@ -4,36 +4,40 @@ import { Card } from "@/components/Card";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex flex-col bg-dark-10">
+    <div className="w-full h-screen flex flex-col bg-dark-10 ">
       {/* parte de cima */}
       <header
         id="inicio"
-        className="bg-dark-20 flex justify-between items-center px-80 py-6"
+        className="bg-dark-20 justify-between flex items-center px-20 py-6"
       >
-        <h1 className="text-brand-color text-2xl">{`<Jhuly Bastos/>`}</h1>
-        <nav>
-          <ol className="flex justify-center items-center gap-7">
-            <li>
-              <a href="#inicio">Inicio</a>
-            </li>
-            <li>
-              <a href="#sobre-mim">Sobre mim</a>
-            </li>
+        <div>
+          <h1 className="text-brand-color text-2xl">{`<Jhuly Bastos/>`}</h1>
+        </div>
+        <div>
+          <nav>
+            <ol className="flex justify-center items-center gap-7">
+              <li>
+                <a href="#inicio">Inicio</a>
+              </li>
+              <li>
+                <a href="#sobre-mim">Sobre mim</a>
+              </li>
 
-            <li>
-              <a href="#habilidades">Habilidades</a>
-            </li>
-            <li>
-              <a href="#projetos">Projetos</a>
-            </li>
-          </ol>
-        </nav>
+              <li>
+                <a href="#habilidades">Habilidades</a>
+              </li>
+              <li>
+                <a href="#projetos">Projetos</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
       </header>
       {/* parte de cima acaba aq */}
 
       {/* meio */}
-      <div className="flex items-center gap-48">
-        <div className="flex flex-col justify-star px-80 py-24 gap-1">
+      <div className="flex items-center justify-between w-full max-w-[1300px] mx-auto px-20">
+        <div className="flex flex-col justify-start gap-1 max-w-full max-h-full ">
           <p>Olá, eu sou</p>
           <h1 className="text-5xl text-brand-color">Jhuly Bastos</h1>
           <p className="mt-4">Desenvolvedora Front-end e Designer</p>

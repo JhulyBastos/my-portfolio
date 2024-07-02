@@ -14,3 +14,14 @@ export function Button({ children, ...props }: ButtonProps) {
     </button>
   );
 }
+
+export function ButtonProjects({ children, ...props }: ButtonProps) {
+  return (
+    <button
+      {...props}
+      className="mt-4 w-[160px] h-[30px] flex items-center justify-center bg-dark-10 text-brand-color font-normal text-sm rounded border-brand-color border-[1px]  hover:bg-brand-color hover:text-dark-10 hover:font-semibold "
+    >
+      {children}
+    </button>
+  );
+}

@@ -1,6 +1,7 @@
+import { projects } from "@/Data/projects";
 import { skills } from "@/Data/skills";
 import { Button } from "@/components/Button";
-import { Card } from "@/components/Card";
+import { Card, CardProjects } from "@/components/Card";
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
           <p>Olá, eu sou</p>
           <h1 className="text-5xl text-brand-color">Jhuly Bastos</h1>
           <p className="mt-4">Desenvolvedora Front-end e Designer</p>
-          <div className="flex gap-2">
+          <div className="flex gap-2 ">
             <a
               href="https://social-tree-gqhqp38yd-jhulybastos.vercel.app/"
               target="_blank"
@@ -78,19 +79,40 @@ export default function Home() {
             Habilidades
           </h1>
           <div className="">
-            <div className="grid grid-cols-6 place-items-cente py-8 gap-4">
+            <div className="grid grid-cols-6 py-8 gap-4 ">
               {skills.map((skill) => (
-                <Card skills={skill} />
+                <Card
+                  skills={skill}
+                  projects={{
+                    imagem: "",
+                    nome: "",
+                  }}
+                />
               ))}
             </div>
           </div>
         </div>
-        <div>
-          <h1 id="projetos" className="text-2xl text-brand-color mt-4">
+        <div className="flex flex-col items-center">
+          <h1 id="projetos" className="text-2xl text-brand-color mt-4 mb-12">
             Projetos
           </h1>
+          <div className=" grid grid-cols-2 gap-14">
+            {projects.map((project) => (
+              <CardProjects
+                projects={project}
+                skills={{
+                  imagem: "",
+                }}
+              />
+            ))}
+          </div>
         </div>
       </div>
+      <footer className="bg-dark-30 w-full h-[150px] mt-14 p-5">
+        <div>
+          <p>2024</p>
+        </div>
+      </footer>
     </div>
   );
 }

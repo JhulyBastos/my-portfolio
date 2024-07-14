@@ -14,6 +14,7 @@ const config: Config = {
         "dark-20": "#101010",
         "dark-30": "#1F1F1F",
         "dark-40": "#FFFFFF",
+        "dark-50": "#22c55e",
       },
     },
   },

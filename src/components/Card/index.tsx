@@ -1,6 +1,8 @@
+"use client";
 import { Skills } from "@/types/Skills";
 import { Projects } from "@/types/projects";
 import { ButtonProjects } from "../Button";
+import { useRouter } from "next/navigation";
 interface CardProps {
   skills: Skills;
   projects: Projects;
@@ -17,6 +19,7 @@ export function Card({ skills }: CardProps) {
 }
 
 export function CardProjects({ projects }: CardProps) {
+  const router = useRouter();
   return (
     <div>
       <div className="bg-dark-20  border-dark-30 border-[1px] w-[380px] h-[230px] p-5 flex justify-center items-center ">
@@ -30,8 +33,13 @@ export function CardProjects({ projects }: CardProps) {
       </div>
       <p className="mt-4">{projects.nome}</p>
       <div className="flex gap-4">
-        <ButtonProjects>Acessar o projeto</ButtonProjects>
-        <ButtonProjects>Acessar repositório</ButtonProjects>
+        <ButtonProjects onClick={() => router.push(`${projects.repositorio}`)}>
+          Acessar repositório
+        </ButtonProjects>
+
+        <ButtonProjects onClick={() => router.push(`${projects.projeto}`)}>
+          Acessar o projeto
+        </ButtonProjects>
       </div>
     </div>
   );

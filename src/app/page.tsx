@@ -108,11 +108,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="bg-dark-30 w-full h-[150px] mt-14 p-5">
-        <div>
-          <p>2024</p>
-        </div>
-      </footer>
+      <footer className="py-10"></footer>
     </div>
   );
 }

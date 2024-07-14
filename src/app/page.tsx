@@ -5,7 +5,7 @@ import { Card, CardProjects } from "@/components/Card";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex flex-col bg-dark-10 ">
+    <div className="w-full h-screen flex flex-1 flex-col bg-dark-10">
       {/* parte de cima */}
       <header
         id="inicio"
@@ -96,7 +96,7 @@ export default function Home() {
           <h1 id="projetos" className="text-2xl text-brand-color mt-4 mb-12">
             Projetos
           </h1>
-          <div className=" grid grid-cols-2 gap-14">
+          <div className=" grid grid-cols-3 gap-14">
             {projects.map((project) => (
               <CardProjects
                 projects={project}

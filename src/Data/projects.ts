@@ -14,15 +14,15 @@ export const projects: Projects[] = [
     nome: "Clone Orkut",
   },
   {
+    imagem: "/assets/imagens/my-projects/planner.jpeg",
+    nome: "NLW Plann.er",
+  },
+  {
     imagem: "/assets/imagens/my-projects/NLW-esports.png",
     nome: "NLW eSports",
   },
   {
     imagem: "/assets/imagens/my-projects/NLW-setup.png",
     nome: "NLW setup",
-  },
-  {
-    imagem: "/assets/imagens/my-projects/tree.png",
-    nome: "Social tree",
   },
 ];

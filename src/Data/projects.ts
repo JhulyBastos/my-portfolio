@@ -10,7 +10,7 @@ export const projects: Projects[] = [
   {
     imagem: "/assets/imagens/my-projects/ds-movie.jpeg",
     nome: "DS Movie",
-    projeto: "",
+    projeto: "https://ds-movie.vercel.app/",
     repositorio: "https://github.com/JhulyBastos/ds-movie",
   },
   {

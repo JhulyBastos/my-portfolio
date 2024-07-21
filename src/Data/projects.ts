@@ -28,13 +28,13 @@ export const projects: Projects[] = [
   {
     imagem: "/assets/imagens/my-projects/NLW-esports.png",
     nome: "NLW eSports",
-    projeto: "",
+    projeto: "https://rocketseat-seven.vercel.app/",
     repositorio: "https://github.com/JhulyBastos/rocketseat",
   },
   {
     imagem: "/assets/imagens/my-projects/NLW-setup.png",
     nome: "NLW setup",
-    projeto: "",
+    projeto: "https://nlw-setup-az507muha-jhulybastos.vercel.app/",
     repositorio: "https://github.com/JhulyBastos/nlw-setup",
   },
 ];

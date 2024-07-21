@@ -96,7 +96,7 @@ export default function Home() {
           <h1 id="projetos" className="text-2xl text-brand-color mt-4 mb-12">
             Projetos
           </h1>
-          <div className=" grid grid-cols-3 gap-14">
+          <div className=" grid grid-cols-3 gap-14 mb-20">
             {projects.map((project) => (
               <CardProjects
                 projects={project}
@@ -108,7 +108,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="py-10"></footer>
+      <footer className="bg-dark-20 justify-between flex items-center px-20 py-6">
+        {" "}
+        <div>2024 - Jhuly Bastos</div>
+      </footer>
     </div>
   );
 }

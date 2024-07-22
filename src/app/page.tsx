@@ -37,11 +37,13 @@ export default function Home() {
       {/* parte de cima acaba aq */}
 
       {/* meio */}
-      <div className="flex items-center justify-between w-full max-w-[1300px] mx-auto px-20">
+      <div className=" flex items-center justify-between w-full max-w-[1300px] mx-auto px-20  ">
         <div className="flex flex-col justify-start gap-1 max-w-full max-h-full ">
-          <p>Olá, eu sou</p>
-          <h1 className="text-5xl text-brand-color">Jhuly Bastos</h1>
-          <p className="mt-4">Desenvolvedora Front-end e Designer</p>
+          <div>
+            <p>Olá, eu sou</p>
+            <h1 className="text-5xl text-brand-color">Jhuly Bastos</h1>
+            <p className="mt-4">Desenvolvedora Front-end e Designer</p>
+          </div>
           <div className="flex gap-2 ">
             <a
               href="https://social-tree-gqhqp38yd-jhulybastos.vercel.app/"
@@ -54,10 +56,10 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="mt-4  hover:scale-105 duration-300">
+        <div className="mt-4  hover:scale-105 duration-300 ">
           <a href="https://github.com/JhulyBastos" target="_blank">
             <img
-              className="w-[400px] h-[400px] rounded-full border-brand-color border-4 p-2 mt-12"
+              className=" lg:w-[400px] lg:h-[400px] sm:w-[300px] sm:h-[300px]  w-[200px] h-[200px] rounded-full border-brand-color border-4 p-2 mt-12"
               src="/assets/imagens/perfil.jpg"
               alt="Imagem de perfil"
             />
@@ -72,14 +74,15 @@ export default function Home() {
           Entusiasta da tecnologia, com foco no desenvolvimento front-end, busco
           aprimorar constantemente minhas habilidades para oferecer experiências
           digitais envolventes e intuitivas. Sou graduada em Design gráfico e
-          graduanda em Análise e desenvolvimento de sistemas.
+          graduanda em Análise e desenvolvimento de sistemas. Minhas paixões
+          incluem jogos eletrônicos, música, ficção científica e cubo mágico.
         </p>
         <div className="flex flex-col items-center">
           <h1 id="habilidades" className="text-2xl text-brand-color mt-16">
             Habilidades
           </h1>
           <div className="">
-            <div className="grid grid-cols-6 py-8 gap-4 ">
+            <div className="grid  grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6   sm py-8 gap-4 ">
               {skills.map((skill) => (
                 <Card
                   skills={skill}
@@ -96,7 +99,7 @@ export default function Home() {
           <h1 id="projetos" className="text-2xl text-brand-color mt-4 mb-12">
             Projetos
           </h1>
-          <div className=" grid grid-cols-3 gap-14 mb-20">
+          <div className=" grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-3  gap-14 mb-20">
             {projects.map((project) => (
               <CardProjects
                 projects={project}

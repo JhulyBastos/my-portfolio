@@ -5,7 +5,7 @@ import { Card, CardProjects } from "@/components/Card";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex flex-1 flex-col bg-dark-10">
+    <div className=" flex flex-1 flex-col bg-dark-10">
       {/* parte de cima */}
       <header
         id="inicio"

@@ -37,4 +37,10 @@ export const projects: Projects[] = [
     projeto: "https://nlw-setup-az507muha-jhulybastos.vercel.app/",
     repositorio: "https://github.com/JhulyBastos/nlw-setup",
   },
+  {
+    imagem: "/assets/imagens/my-projects/loja.jpeg",
+    nome: "Loja de calçados",
+    projeto: "",
+    repositorio: "https://github.com/JhulyBastos/projeto-loja",
+  },
 ];

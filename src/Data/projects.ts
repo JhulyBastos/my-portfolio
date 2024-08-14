@@ -41,6 +41,6 @@ export const projects: Projects[] = [
     imagem: "/assets/imagens/my-projects/loja.jpeg",
     nome: "Loja de calçados",
     projeto: "",
-    repositorio: "https://github.com/JhulyBastos/projeto-loja",
+    repositorio: "",
   },
 ];

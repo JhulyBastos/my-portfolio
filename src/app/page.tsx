@@ -92,6 +92,8 @@ export default function Home() {
                   projects={{
                     imagem: "",
                     nome: "",
+                    projeto: "",
+                    repositorio: "",
                   }}
                 />
               ))}

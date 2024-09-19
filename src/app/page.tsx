@@ -63,7 +63,7 @@ export default function Home() {
             <img
               className=" lg:w-[400px] lg:h-[400px] md:w-[320px] md:h-[320px] sm:w-[250px] sm:h-[250px]  w-[200px] h-[200px] rounded-full border-brand-color border-4 p-2 mt-12"
               src="/assets/imagens/perfil.jpg"
-              alt="Imagem de perfil"
+              alt="Imagem de perfil."
             />
           </a>
         </div>

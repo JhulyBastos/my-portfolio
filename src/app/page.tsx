@@ -47,10 +47,7 @@ export default function Home() {
             <p className="mt-4 ">Desenvolvedora Front-end e Designer</p>
           </div>
           <div className="flex gap-2 ">
-            <a
-              href="https://social-tree-gqhqp38yd-jhulybastos.vercel.app/"
-              target="_blank"
-            >
+            <a href="https://social-tree-five-tau.vercel.app/" target="_blank">
               <Button>Contato</Button>
             </a>
             <a href="/assets/my-document/curriculo.pdf" target="_blank">

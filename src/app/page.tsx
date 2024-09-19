@@ -85,8 +85,9 @@ export default function Home() {
           </h1>
           <div className="">
             <div className="grid  grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6   sm py-8 gap-4 ">
-              {skills.map((skill) => (
+              {skills.map((skill, index) => (
                 <Card
+                  key={index}
                   skills={skill}
                   projects={{
                     imagem: "",

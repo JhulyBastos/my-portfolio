@@ -19,12 +19,7 @@ export const projects: Projects[] = [
     projeto: "",
     repositorio: "https://github.com/JhulyBastos/clone-orkut",
   },
-  {
-    imagem: "/assets/imagens/my-projects/planner.jpeg",
-    nome: "NLW Plann.er",
-    projeto: "",
-    repositorio: "https://github.com/JhulyBastos/planejador-de-viagens",
-  },
+
   {
     imagem: "/assets/imagens/my-projects/NLW-esports.png",
     nome: "NLW eSports",

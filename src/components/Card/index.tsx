@@ -34,9 +34,7 @@ export function CardProjects({ projects }: CardProps) {
 
       <div className="flex items-center justify-between gap-4 px-2">
         <p className="mt-4">{projects.nome}</p>
-        <ButtonProjects onClick={() => router.push(`${projects.repositorio}`)}>
-          Acessar repositório
-        </ButtonProjects>
+        <ButtonProjects projects={projects}>Acessar repositório</ButtonProjects>
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
+import { Projects } from "@/types/projects";
 import { ComponentProps, ReactNode } from "react";
 
 interface ButtonProps extends ComponentProps<"button"> {
   children: ReactNode;
+  projects: Projects;
 }
 
 export function Button({ children, ...props }: ButtonProps) {
@@ -15,13 +17,15 @@ export function Button({ children, ...props }: ButtonProps) {
   );
 }
 
-export function ButtonProjects({ children, ...props }: ButtonProps) {
+export function ButtonProjects({ children, projects, ...props }: ButtonProps) {
   return (
-    <button
-      {...props}
-      className="mt-4 w-[160px] h-[30px] flex items-center justify-center bg-dark-10 text-brand-color font-normal text-sm rounded border-brand-color border-[1px]  hover:bg-brand-color hover:text-dark-10 hover:font-semibold "
-    >
-      {children}
-    </button>
+    <a href={projects.repositorio} target="_blank">
+      <button
+        {...props}
+        className="mt-4 w-[160px] h-[30px] flex items-center justify-center bg-dark-10 text-brand-color font-normal text-sm rounded border-brand-color border-[1px]  hover:bg-brand-color hover:text-dark-10 hover:font-semibold "
+      >
+        {children}
+      </button>
+    </a>
   );
 }
